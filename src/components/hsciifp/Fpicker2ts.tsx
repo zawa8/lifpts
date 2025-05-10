@@ -2,8 +2,8 @@
 // import React, { useState, useEffect } from "react";
 import React, { useState } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import fgioptions from "./fgioptions.json" ;
-import { hsciifont_classnames } from "./hsciifonts";
+import fgioptions from "./fgioptionsg4.json" ;
+import { hsciifont_classnames } from "./hsciifontsg4";
 interface foption { walue: string; label: string; }
 interface fitem extends foption {}
 interface fgroup extends foption { fitems: fitem[]; }

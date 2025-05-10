@@ -162,31 +162,6 @@ export const hsciifont_classnames : { [key: string]: string }= {
 	tamilenglosoftw8mono:tamilenglosoftw8mono.className, malayalamenglosoftw8mono:malayalamenglosoftw8mono.className, sinhalaenglosoftw8mono:sinhalaenglosoftw8mono.className,
 	hindienglosoftw8mono:hindienglosoftw8mono.className, gurmukhienglosoftw8mono:gurmukhienglosoftw8mono.className, guzratienglosoftw8mono:guzratienglosoftw8mono.className,
 	banglaenglosoftw8mono:banglaenglosoftw8mono.className, oriyaenglosoftw8mono:oriyaenglosoftw8mono.className,
-////////////////////////////// { englosoftw8 utf bilo <<<<<<<<<<<<<<<<<<<<
-	inglishenglosoftw8utf:inglishenglosoftw8utf.className, russianenglosoftw8utf:russianenglosoftw8utf.className, koreanenglosoftw8utf:koreanenglosoftw8utf.className,
-	teluguenglosoftw8utf:teluguenglosoftw8utf.className, kannadaenglosoftw8utf:kannadaenglosoftw8utf.className,
-	tamilenglosoftw8utf:tamilenglosoftw8utf.className, malayalamenglosoftw8utf:malayalamenglosoftw8utf.className, sinhalaenglosoftw8utf:sinhalaenglosoftw8utf.className,
-	hindienglosoftw8utf:hindienglosoftw8utf.className, gurmukhienglosoftw8utf:gurmukhienglosoftw8utf.className, guzratienglosoftw8utf:guzratienglosoftw8utf.className,
-	banglaenglosoftw8utf:banglaenglosoftw8utf.className, oriyaenglosoftw8utf:oriyaenglosoftw8utf.className,
-//////~~~~~~~~~~~~~~englodotw8 bilo
-////////////////////////////// { englodotw8 asc bilo <<<<<<<<<<<<<<<<<<<<
-	inglishenglodotw8asc:inglishenglodotw8asc.className, russianenglodotw8asc:russianenglodotw8asc.className, koreanenglodotw8asc:koreanenglodotw8asc.className,
-	teluguenglodotw8asc:teluguenglodotw8asc.className, kannadaenglodotw8asc:kannadaenglodotw8asc.className,
-	tamilenglodotw8asc:tamilenglodotw8asc.className, malayalamenglodotw8asc:malayalamenglodotw8asc.className, sinhalaenglodotw8asc:sinhalaenglodotw8asc.className,
-	hindienglodotw8asc:hindienglodotw8asc.className, gurmukhienglodotw8asc:gurmukhienglodotw8asc.className, guzratienglodotw8asc:guzratienglodotw8asc.className,
-	banglaenglodotw8asc:banglaenglodotw8asc.className, oriyaenglodotw8asc:oriyaenglodotw8asc.className,
-////////////////////////////// { englodotw8 mono bilo <<<<<<<<<<<<<<<<<<<<
-	inglishenglodotw8mono:inglishenglodotw8mono.className, russianenglodotw8mono:russianenglodotw8mono.className, koreanenglodotw8mono:koreanenglodotw8mono.className,
-	teluguenglodotw8mono:teluguenglodotw8mono.className, kannadaenglodotw8mono:kannadaenglodotw8mono.className,
-	tamilenglodotw8mono:tamilenglodotw8mono.className, malayalamenglodotw8mono:malayalamenglodotw8mono.className, sinhalaenglodotw8mono:sinhalaenglodotw8mono.className,
-	hindienglodotw8mono:hindienglodotw8mono.className, gurmukhienglodotw8mono:gurmukhienglodotw8mono.className, guzratienglodotw8mono:guzratienglodotw8mono.className,
-	banglaenglodotw8mono:banglaenglodotw8mono.className, oriyaenglodotw8mono:oriyaenglodotw8mono.className,
-////////////////////////////// { englodotw8 utf bilo <<<<<<<<<<<<<<<<<<<<
-	inglishenglodotw8utf:inglishenglodotw8utf.className, russianenglodotw8utf:russianenglodotw8utf.className, koreanenglodotw8utf:koreanenglodotw8utf.className,
-	teluguenglodotw8utf:teluguenglodotw8utf.className, kannadaenglodotw8utf:kannadaenglodotw8utf.className,
-	tamilenglodotw8utf:tamilenglodotw8utf.className, malayalamenglodotw8utf:malayalamenglodotw8utf.className, sinhalaenglodotw8utf:sinhalaenglodotw8utf.className,
-	hindienglodotw8utf:hindienglodotw8utf.className, gurmukhienglodotw8utf:gurmukhienglodotw8utf.className, guzratienglodotw8utf:guzratienglodotw8utf.className,
-	banglaenglodotw8utf:banglaenglodotw8utf.className, oriyaenglodotw8utf:oriyaenglodotw8utf.className,
 //////~~~~~~~~~~~~~~onlyw8 bilo
 ////////////////////////////// { onlyw8 asc bilo <<<<<<<<<<<<<<<<<<<<
 	inglishonlyw8asc:inglishonlyw8asc.className, russianonlyw8asc:russianonlyw8asc.className, koreanonlyw8asc:koreanonlyw8asc.className,
@@ -200,10 +175,4 @@ export const hsciifont_classnames : { [key: string]: string }= {
 	tamilonlyw8mono:tamilonlyw8mono.className, malayalamonlyw8mono:malayalamonlyw8mono.className, sinhalaonlyw8mono:sinhalaonlyw8mono.className,
 	hindionlyw8mono:hindionlyw8mono.className, gurmukhionlyw8mono:gurmukhionlyw8mono.className, guzrationlyw8mono:guzrationlyw8mono.className,
 	banglaonlyw8mono:banglaonlyw8mono.className, oriyaonlyw8mono:oriyaonlyw8mono.className,
-////////////////////////////// { onlyw8 utf bilo <<<<<<<<<<<<<<<<<<<<
-	inglishonlyw8utf:inglishonlyw8utf.className, russianonlyw8utf:russianonlyw8utf.className, koreanonlyw8utf:koreanonlyw8utf.className,
-	teluguonlyw8utf:teluguonlyw8utf.className, kannadaonlyw8utf:kannadaonlyw8utf.className,
-	tamilonlyw8utf:tamilonlyw8utf.className, malayalamonlyw8utf:malayalamonlyw8utf.className, sinhalaonlyw8utf:sinhalaonlyw8utf.className,
-	hindionlyw8utf:hindionlyw8utf.className, gurmukhionlyw8utf:gurmukhionlyw8utf.className, guzrationlyw8utf:guzrationlyw8utf.className,
-	banglaonlyw8utf:banglaonlyw8utf.className, oriyaonlyw8utf:oriyaonlyw8utf.className,
 }
