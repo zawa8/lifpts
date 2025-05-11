@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Fpicker2ts from "@/components/hsciifp/Fpicker2ts";
 export default function Home() {
   const iplaceholer = `A=x≠a (xpple=Apple) a=>car cAt=cxt rxt=rAt=mouse=cuva fast
