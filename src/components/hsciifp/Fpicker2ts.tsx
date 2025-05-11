@@ -4,8 +4,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import fgioptions from "./fgioptions_only.json" ;
 import { hsciifont_classnames } from "./hsciifontsg4";
 
-const fgidata = fgioptions;
-
 const Fpicker2ts = () => {
   const handle_fitem_change = (curr_selected_fitem: string) => {
     if (curr_selected_fitem) { setBodyFont(curr_selected_fitem); }
@@ -21,9 +19,9 @@ const Fpicker2ts = () => {
       <Select onValueChange={handle_fitem_change}>
         <SelectTrigger className="w-[180px] mt-4"> <SelectValue placeholder="hscii_font=>select"/> </SelectTrigger>
         <SelectContent>
-        {fgidata.map((fgigrup) => (
-            <SelectItem key={fgigrup.walue} value={fgigrup.walue}>
-              {fgigrup.label}
+        {fgioptions.map((fgioption) => (
+            <SelectItem key={fgioption.walue} value={fgioption.walue}>
+              {fgioption.label}
             </SelectItem>
           ))}
         </SelectContent>
