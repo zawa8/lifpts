@@ -1,7 +1,7 @@
 "use client" ;
 import React from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import fgioptions from "./fgioptions_sel1g2.json" ;
+import fgioptions from "./fgioptions_soft.json" ;
 import { hsciifont_classnames } from "./hsciifontsg4";
 
 const fgidata = fgioptions;
@@ -21,11 +21,11 @@ const Fpicker2ts = () => {
       <Select onValueChange={handle_fitem_change}>
         <SelectTrigger className="w-[180px] mt-4"> <SelectValue placeholder="hscii_font=>select"/> </SelectTrigger>
         <SelectContent>
-        {fgidata.map((fgigrup) => (
+        {fgidata.map((fgigrup) => 
             <SelectItem key={fgigrup.walue} value={fgigrup.walue}>
               {fgigrup.label}
             </SelectItem>
-          ))}
+          )}
         </SelectContent>
       </Select>
     </div>
