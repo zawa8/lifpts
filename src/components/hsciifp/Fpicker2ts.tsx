@@ -1,7 +1,7 @@
 "use client" ;
 import React from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import fgioptions from "./fgioptions_sel1g4.json" ;
+import fgioptions from "./fgioptions_sel1g2.json" ;
 import { hsciifont_classnames } from "./hsciifontsg4";
 
 const fgidata = fgioptions;
@@ -10,13 +10,11 @@ const Fpicker2ts = () => {
   const handle_fitem_change = (curr_selected_fitem: string) => {
     if (curr_selected_fitem) { setBodyFont(curr_selected_fitem); }
   }; 
-  let currfontcn  ;
   const setBodyFont = (selected_hsciifont_name:string) => {
-	document.body.classList.value = document.body.classList.value.replaceAll(/__className_\w+\s+antialiased/g,"");
-	document.body.classList.value = document.body.classList.value.replaceAll(/antialiased\s+__className_\w+/g,"");
-	currfontcn = hsciifont_classnames[selected_hsciifont_name];
-	document.body.classList.add(currfontcn);
-	document.body.classList.add("antialiased");
+    document.body.classList.value = document.body.classList.value.replaceAll(/__className_\w+\s+antialiased/g,"");
+    document.body.classList.value = document.body.classList.value.replaceAll(/antialiased\s+__className_\w+/g,"");
+    document.body.classList.add(hsciifont_classnames[selected_hsciifont_name]);
+    document.body.classList.add("antialiased");
   };
   return (
     <div>
