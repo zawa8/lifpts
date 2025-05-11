@@ -1,26 +1,12 @@
 "use client" ;
-// import React, { useState, useEffect } from "react";
-import React, { useState } from "react";
+import React from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import fgioptions from "./fgioptionsg4.json" ;
+import fgioptions from "./fgioptions_sel1g4.json" ;
 import { hsciifont_classnames } from "./hsciifontsg4";
-interface foption { walue: string; label: string; }
-interface fitem extends foption {}
-interface fgroup extends foption { fitems: fitem[]; }
 
-const fgidata: fgroup[] = fgioptions ;
+const fgidata = fgioptions;
 
 const Fpicker2ts = () => {
-  const [curr_fitems, set_curr_fitems] = useState<fitem[]>([]);
-  const handle_fgroup_change = (curr_selected_fgroup: string) => {
-    if (curr_selected_fgroup) {
-      setBodyFont(curr_selected_fgroup);
-      const fgroup_const = fgidata.find((s) => s.walue === curr_selected_fgroup);
-      set_curr_fitems(fgroup_const?.fitems || []);
-    } else {
-      set_curr_fitems([]);
-    }
-  };
   const handle_fitem_change = (curr_selected_fitem: string) => {
     if (curr_selected_fitem) { setBodyFont(curr_selected_fitem); }
   }; 
@@ -34,25 +20,12 @@ const Fpicker2ts = () => {
   };
   return (
     <div>
-      <Select onValueChange={handle_fgroup_change}>
-        <SelectTrigger className="w-[180px]">
-          <SelectValue placeholder="select font grup" />
-        </SelectTrigger>
-        <SelectContent>
-          {fgidata.map((fgigrup) => (
-            <SelectItem key={fgigrup.walue} value={fgigrup.walue}>
-              {fgigrup.label}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
-
       <Select onValueChange={handle_fitem_change}>
         <SelectTrigger className="w-[180px] mt-4"> <SelectValue placeholder="hscii_font=>select"/> </SelectTrigger>
         <SelectContent>
-          {curr_fitems?.map((fontitem) => (
-            <SelectItem key={fontitem.walue} value={fontitem.walue}>
-              {fontitem.label}
+        {fgidata.map((fgigrup) => (
+            <SelectItem key={fgigrup.walue} value={fgigrup.walue}>
+              {fgigrup.label}
             </SelectItem>
           ))}
         </SelectContent>
