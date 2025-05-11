@@ -1,0 +1,15 @@
+[
+	{ "label": "inglish only", "walue": "inglishonlyw8asc" },
+	{ "label": "russian only", "walue": "russianonlyw8asc" },
+	{ "label": "korean only", "walue": "koreanonlyw8asc" },
+	{ "label": "hindi only", "walue": "hindionlyw8asc" },
+	{ "label": "bangla only", "walue": "banglaonlyw8asc" },
+	{ "label": "telugu only", "walue": "teluguonlyw8asc" },
+	{ "label": "sinhala only", "walue": "sinhalaonlyw8asc" },
+	{ "label": "tamil only", "walue": "tamilonlyw8asc" },
+	{ "label": "kannada only", "walue": "kannadaonlyw8asc" },
+	{ "label": "malayalam only", "walue": "malayalamonlyw8asc" },
+	{ "label": "oriya only", "walue": "oriyaonlyw8asc" },
+	{ "label": "gurmukhi only", "walue": "gurmukhionlyw8asc" },
+	{ "label": "guzrati only", "walue": "guzrationlyw8asc" }
+ ]

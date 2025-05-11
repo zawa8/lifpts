@@ -1,7 +1,7 @@
 "use client" ;
 import React from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import fgioptions from "./fgioptions_sel1g2.json" ;
+import fgioptions from "./fgioptions_only.json" ;
 import { hsciifont_classnames } from "./hsciifontsg4";
 
 const fgidata = fgioptions;
