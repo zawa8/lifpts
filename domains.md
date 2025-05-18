@@ -1,0 +1,11 @@
+mlang.vercel.app
+hscii.vercel.app
+vwx.vercel.app
+ztr8.vercel.app
+zawa8.vercel.app
+zawa4.vercel.app
+types4.vercel.app
+ts4.vercel.app
+tsc4.vercel.app
+zs4.vercel.app
+zs4u.vercel.app
