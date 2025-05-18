@@ -9,7 +9,7 @@ woff2_hscii_fonts_dir="/home/viml/mg/zw8/font/woff2/hscii"
 ############################
 rm -r ${src_hsciifp_dir}/fonts/hscii
 cp -r ${woff2_hscii_fonts_dir} ${src_hsciifp_dir}/fonts/
-exit
+#exit
 
 ############################
 read -n1 -s -r -p $'Press d tu delete englo[dotw8/softw8] englosoftw8/englosoftw8[utf/mono] or Ctrl+C to exit...\n' key
