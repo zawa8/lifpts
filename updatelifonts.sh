@@ -1,21 +1,24 @@
 #!/bin/bash
 ############################
-gitmsz1="'ztr8.vercel.app mck82.vercel.app fb.com/ztrabc x.com/etphor'"
+gitmsz1="'hscii.vercel.app hfont.vercel.app mck82.vercel.app fb.com/ztrabc x.com/etphor'"
 ############################
 cwd=$(pwd)
-src_lifonts_dir="/home/viml/mg/zw8/ztr8wrcl/src/components/lifonts/"
+src_hsciifp_dir="/home/viml/mg/zw8/addonweb/npmjs/lifpts/src/components/hsciifp/"
+#src_lifonts_dir="/home/viml/mg/zw8/ztr8wrcl/src/components/lifonts/"
 woff2_hscii_fonts_dir="/home/viml/mg/zw8/font/woff2/hscii"
 ############################
-rm -r ${src_lifonts_dir}/fonts/hscii
-cp -r ${woff2_hscii_fonts_dir} ${src_lifonts_dir}/fonts/
+rm -r ${src_hsciifp_dir}/fonts/hscii
+cp -r ${woff2_hscii_fonts_dir} ${src_hsciifp_dir}/fonts/
+#exit
+
 ############################
 read -n1 -s -r -p $'Press d tu delete englo[dotw8/softw8] englosoftw8/englosoftw8[utf/mono] or Ctrl+C to exit...\n' key
 if [ "$key" = 'd' ]; then
 	printf "pressed d so deleting englo[dotw8/softw8] englosoftw8/englosoftw8[utf/mono] \n"
-	rm -r ${src_lifonts_dir}/fonts/hscii/onlyw8
-	rm -r ${src_lifonts_dir}/fonts/hscii/englodotw8
-	rm -r ${src_lifonts_dir}/fonts/hscii/englosoftw8/englosoftw8utf
-	rm -r ${src_lifonts_dir}/fonts/hscii/englosoftw8/englosoftw8mono
+	#rm -r ${src_lifonts_dir}/fonts/hscii/onlyw8
+	#rm -r ${src_lifonts_dir}/fonts/hscii/englodotw8
+	#rm -r ${src_lifonts_dir}/fonts/hscii/englosoftw8/englosoftw8utf
+	#rm -r ${src_lifonts_dir}/fonts/hscii/englosoftw8/englosoftw8mono
 else
 	read -n1 -s -r -p $'Press e tu exit the script. any other key to continue script\n' key
 	if [ "$key" = 'e' ]; then
@@ -25,6 +28,7 @@ else
 fi
 ############################
 declare -a wrcl_lifont_arr=(
+"/home/viml/mg/zw8/addonweb/npmjs/hsciiwapp/src/components/"
 "/home/viml/mg/wrcl/weijunext/components/"
 "/home/viml/mg/wrcl/mck_/mck82/components/"
 "/home/viml/mg/wrcl/mck_/mck81/components/"
@@ -42,12 +46,14 @@ declare -a wrcl_lifont_arr=(
 ############################
 for i in "${wrcl_lifont_arr[@]}"
 do
-	rm -r ${i}/lifonts
-	cp -r ${src_lifonts_dir} ${i}/
+	#rm -r ${i}/lifonts # comment later on 
+	rm -r ${i}/hsciifp
+	cp -r ${src_hsciifp_dir} ${i}/
 done
+exit
 ############################
 declare -a wrcl_git_arr=(
-"/home/viml/mg/zw8/ztr8wrcl/"
+"/home/viml/mg/zw8/addonweb/npmjs/hsciiwercel/"
 "/home/viml/mg/wrcl/weijunext/"
 "/home/viml/mg/wrcl/mck_/mck82/"
 "/home/viml/mg/wrcl/mck_/mck81/"
@@ -73,7 +79,7 @@ if [ "$key" = 'g' ]; then
 		cd ${i}
 		printf "current directory is : $(pwd)\n"
 		printf "doiNg git add commit push ${i}\n"
-		git add . ; git commit -am 'ztr8.vercel.app mck82.vercel.app fb.com/ztrabc x.com/etphor' ; git push
+		#git add . ; git commit -am 'hscii8.vercel.app hfont.vercel.app mck82.vercel.app fb.com/ztrabc x.com/etphor' ; git push
 	done
 else
 	printf "pressed other key.  so no git-commit. please do git add-commit-push lateron \n"
