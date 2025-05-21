@@ -1,6 +1,6 @@
 //import Image from "next/image";
-import { Hsciifontpicker } from "@/components/hsciifp/Hsciifontpicker";
-// import {Hsciifontpicker} from "libhsciifp/client";
+// import { Hsciifontpicker } from "@/components/hsciifp/Hsciifontpicker";
+import {Hsciifontpicker} from "libhsciifp";
 export default function Home() {
   const iplaceholer = `A=x≠a (xpple=Apple) a=>car cAt=cxt rxt=rAt=mouse=cuva fast
 H=v≠h  wveel=wHeel kvani=kHani=story 
