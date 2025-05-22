@@ -1,7 +1,6 @@
 "use client" ;
 // import React, { useState, useEffect } from "react";
 import React, { useState } from "react";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import fgioptions from "./fgioptionsg4.json" ;
 import { hsciifont_classnames } from "./hsciifontsg4";
 interface foption { walue: string; label: string; }
@@ -12,7 +11,8 @@ const fgidata: fgroup[] = fgioptions ;
 
 const Hsciifontpicker = () => {
   const [curr_fitems, set_curr_fitems] = useState<fitem[]>([]);
-  const handle_fgroup_change = (curr_selected_fgroup: string) => {
+  const handle_fgroup_change = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    let curr_selected_fgroup:string = event.target.value ;
     if (curr_selected_fgroup) {
       setBodyFont(curr_selected_fgroup);
       const fgroup_const = fgidata.find((s) => s.walue === curr_selected_fgroup);
@@ -21,8 +21,8 @@ const Hsciifontpicker = () => {
       set_curr_fitems([]);
     }
   };
-  const handle_fitem_change = (curr_selected_fitem: string) => {
-    if (curr_selected_fitem) { setBodyFont(curr_selected_fitem); }
+  const handle_fitem_change = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    if (event.target.value) { setBodyFont(event.target.value); }
   }; 
   let currfontcn  ;
   const setBodyFont = (selected_hsciifont_name:string) => {
@@ -34,29 +34,21 @@ const Hsciifontpicker = () => {
   };
   return (
     <div>
-      <Select onValueChange={handle_fgroup_change}>
-        <SelectTrigger className="w-[180px]">
-          <SelectValue placeholder="select font grup" />
-        </SelectTrigger>
-        <SelectContent>
+      <select onChange={handle_fgroup_change}>
+      <option value="" disabled>hscii_font group select please</option>
           {fgidata.map((fgigrup) => (
-            <SelectItem key={fgigrup.walue} value={fgigrup.walue}>
+            <option key={fgigrup.walue} value={fgigrup.walue}>
               {fgigrup.label}
-            </SelectItem>
+            </option>
           ))}
-        </SelectContent>
-      </Select>
+      </select>
 
-      <Select onValueChange={handle_fitem_change}>
-        <SelectTrigger className="w-[180px] mt-4"> <SelectValue placeholder="hscii_font=>select"/> </SelectTrigger>
-        <SelectContent>
+      <select onChange={handle_fitem_change} defaultValue={''}>
+      <option value="" disabled>hscii_font select please</option>
           {curr_fitems?.map((fontitem) => (
-            <SelectItem key={fontitem.walue} value={fontitem.walue}>
-              {fontitem.label}
-            </SelectItem>
+            <option key={fontitem.walue} value={fontitem.walue}> {fontitem.label} </option>
           ))}
-        </SelectContent>
-      </Select>
+      </select>
     </div>
   );
 };
