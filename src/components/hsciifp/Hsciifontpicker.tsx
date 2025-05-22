@@ -1,13 +1,10 @@
 "use client" ;
 import React from "react";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import fgioptions from "./fgioptions_sel1g4.json" ;
 import { hsciifont_classnames } from "./hsciifontsg4";
 
 const Hsciifontpicker = () => {
-  const handle_fitem_change = (curr_selected_fitem: string) => {
-    if (curr_selected_fitem) { setBodyFont(curr_selected_fitem); }
-  }; 
+  const handle_fitem_change = (event: React.ChangeEvent<HTMLSelectElement>) => { if (event.target.value) { setBodyFont(event.target.value); } }; 
   const setBodyFont = (selected_hsciifont_name:string) => {
 	document.body.classList.value = document.body.classList.value.replaceAll(/__className_\w+\s+antialiased/g,"");
 	document.body.classList.value = document.body.classList.value.replaceAll(/antialiased\s+__className_\w+/g,"");
@@ -16,16 +13,12 @@ const Hsciifontpicker = () => {
   };
   return (
     <div>
-      <Select onValueChange={handle_fitem_change}>
-        <SelectTrigger className="w-[180px] mt-4"> <SelectValue placeholder="hscii_font=>select"/> </SelectTrigger>
-        <SelectContent>
-        {fgioptions.map((fgioption) => (
-            <SelectItem key={fgioption.walue} value={fgioption.walue}>
-              {fgioption.label}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
+      <select  onChange={handle_fitem_change} defaultValue={''} >
+      <option value="" disabled>hscii_font select please</option>
+      {fgioptions.map((option) => (
+        <option key={option.walue} value={option.walue}>{option.label}</option>
+      ))}
+    </select>
     </div>
   );
 };
