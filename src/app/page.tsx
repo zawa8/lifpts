@@ -1,5 +1,5 @@
 // import Image from "next/image";
-import Fpicker2ts from "@/components/hsciifp/Fpicker2ts";
+import Hsciifontpicker from "@/components/hsciifp/Hsciifontpicker";
 export default function Home() {
   const iplaceholer = `A=x≠a (xpple=Apple) a=>car cAt=cxt rxt=rAt=mouse=cuva fast
 H=v≠h  wveel=wHeel kvani=kHani=story 
@@ -22,7 +22,7 @@ a->ram i->sijaram u->vnuman e->gnesh o->gowinq
   return (
     <div className="w-full">
       <main className="flex flex-col gap-[4px] row-start-2 items-center sm:items-start">
-        <Fpicker2ts/>
+        <Hsciifontpicker/>
         <textarea id="ta1" rows={12} className="p-4 min-w-full sm:text-xl, md:text-2xl text-purple-700" placeholder={iplaceholer} />
         <a
             className="border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"

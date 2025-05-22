@@ -4,7 +4,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import fgioptions from "./fgioptions_sel1g4.json" ;
 import { hsciifont_classnames } from "./hsciifontsg4";
 
-const Fpicker2ts = () => {
+const Hsciifontpicker = () => {
   const handle_fitem_change = (curr_selected_fitem: string) => {
     if (curr_selected_fitem) { setBodyFont(curr_selected_fitem); }
   }; 
@@ -30,4 +30,4 @@ const Fpicker2ts = () => {
   );
 };
 
-export default Fpicker2ts;
+export default Hsciifontpicker;
