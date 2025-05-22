@@ -10,7 +10,7 @@ interface fgroup extends foption { fitems: fitem[]; }
 
 const fgidata: fgroup[] = fgioptions ;
 
-const Fpicker2ts = () => {
+const Hsciifontpicker = () => {
   const [curr_fitems, set_curr_fitems] = useState<fitem[]>([]);
   const handle_fgroup_change = (curr_selected_fgroup: string) => {
     if (curr_selected_fgroup) {
@@ -61,4 +61,4 @@ const Fpicker2ts = () => {
   );
 };
 
-export default Fpicker2ts;
+export default Hsciifontpicker;
