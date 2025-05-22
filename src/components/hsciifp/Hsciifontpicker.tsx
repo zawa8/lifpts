@@ -1,0 +1,24 @@
+"use client" ;
+import React from "react";
+import fgioptions from "./fgioptions_soft.json" ;
+import { hsciifont_classnames } from "./hsciifontsg4";
+
+const Hsciifontpicker = () => {
+  const handle_fitem_change = (event: React.ChangeEvent<HTMLSelectElement>) => { if (event.target.value) { setBodyFont(event.target.value); } }; 
+  const setBodyFont = (selected_hsciifont_name:string) => {
+    document.body.classList.value = document.body.classList.value.replaceAll(/__className_\w+\s+antialiased/g,"");
+    document.body.classList.value = document.body.classList.value.replaceAll(/antialiased\s+__className_\w+/g,"");
+    document.body.classList.add(hsciifont_classnames[selected_hsciifont_name]);
+    document.body.classList.add("antialiased");
+  };
+  return (
+    <div>
+    <select  onChange={handle_fitem_change} defaultValue={''} >
+      <option value="" disabled>hscii_font select please</option>
+      {fgioptions.map( (option) => ( <option key={option.walue} value={option.walue}>{option.label}</option> ))}
+    </select>
+    </div>
+  );
+};
+
+export default Hsciifontpicker;
