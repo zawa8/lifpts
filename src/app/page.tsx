@@ -1,5 +1,4 @@
 // import Image from "next/image";
-// import Hsciifontpicker from "@/components/hsciifp/Hsciifontpicker";
 import { Hsciifontpicker } from "libhsciifp";
 
 export default function Home() {
@@ -34,7 +33,16 @@ a->ram i->sijaram u->vnuman e->gnesh o->gowinq
           >
             try hscii font
           </a>
+        <a
+            className="border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
+            href="https://docs.google.com/spreadsheets/d/1NatLQlQGA0nqk_cqnY2rdfeQDwZk7ARax6DFz1QnQgA/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            please xdd synonyms
+          </a>
       </main>
     </div>
   );
 }
+
